@@ -9,8 +9,9 @@
 //
 //Another approach is -- rearrange elements i.e. negative number and postive number at one side of the array 
 //either left array will contain neagtive numbers or positive numbers 
-//then in next traverse swap elements at correct position
+//then in next traverse swap elements at correct position - complexity O(n)
 
+//In the above approach we can optimise this using Quicksort partition approach, assume 0 as pivot element -complexity O(n)
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -107,7 +108,7 @@ void RearAltrPosNegOther(int *a, int size)
 
 //first rearrange elements
 //then swap
-//sorter version
+//shorter version
 //use quicksort concept to rearrange the elements
 void RearAltrPosNegOther2(int *a, int size)
 {
