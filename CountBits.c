@@ -1,3 +1,8 @@
+//We can use also another built in function for this
+//this is provided by gcc
+//— Built-in Function: int __builtin_popcount (unsigned int x)
+//https://gcc.gnu.org/onlinedocs/gcc/Other-Builtins.html
+
 #include <stdio.h>
 #include <stdlib.h>
 
