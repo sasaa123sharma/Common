@@ -15,7 +15,7 @@ unsigned int CountBits(unsigned int n)
 		count++;
 	}
 	return count;
-}
+}//complexity O(logn)
 
 int main()
 {
