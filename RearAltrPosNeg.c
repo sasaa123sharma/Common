@@ -1,4 +1,4 @@
-//Rearrange array in alternating positive & negative items with O(1) extra space
+//Modify array with alternate positive & negative items with O(1) extra space
 //Solutions
 //One way could be use of stacks, if we are allowed to use more space-- use two stacks one for positive and another for negative
 //and put elements back one by one alternatively
