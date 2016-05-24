@@ -4,3 +4,4 @@
 #Check if a number is Bleak - CheckBleak.c
 #Copy set bits in a range - SetBitsInRange.c
 #Absolute distinct count in a sorted array - AbsDistCount.c
+#Check BIG and LITTLE endian machine - ChckEndian.c
