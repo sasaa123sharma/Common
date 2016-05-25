@@ -5,3 +5,4 @@
 #Copy set bits in a range - SetBitsInRange.c
 #Absolute distinct count in a sorted array - AbsDistCount.c
 #Check BIG and LITTLE endian machine - ChckEndian.c
+#Find the smallest and second smallest element in an array - FirstTwoMin.c
