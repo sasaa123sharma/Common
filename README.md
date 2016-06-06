@@ -8,3 +8,4 @@
 #Find the smallest and second smallest element in an array - FirstTwoMin.c
 #Implement your own tail (Read last n lines of a huge file) - Tail.c
 #Find missing number - MissingNum.c
+#find missing elements in a range and misssing elements should be printed in sorted order - MissingNums.c
