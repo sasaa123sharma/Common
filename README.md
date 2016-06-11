@@ -12,4 +12,6 @@
 #Find the repeating and the missing - FindTwoNuTwos's comppliment - m.c
 #Position of rightmost set bit - RightSetBit.c
 #Twos's comppliment - TwosComplmnt.c
+#Turn off the rightmost set bit - TurnOffRightBit.c
+
 
