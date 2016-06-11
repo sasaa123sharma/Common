@@ -10,3 +10,4 @@
 #Find missing number - MissingNum.c
 #find missing elements in a range and misssing elements should be printed in sorted order - MissingNums.c
 #Find the repeating and the missing - FindTwoNum.c
+#Position of rightmost set bit - RightSetBit.c
