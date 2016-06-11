@@ -13,5 +13,7 @@
 #Position of rightmost set bit - RightSetBit.c
 #Twos's comppliment - TwosComplmnt.c
 #Turn off the rightmost set bit - TurnOffRightBit.c
+#Check if number is power of two - PowerOfTwo.c
+#Get two repeating elements in a given array - TwoRepeatElm.c
 
 
