@@ -101,6 +101,82 @@ void FindTwoNum(const int *arr, int size, int *missed, int *repeat)
 }
 
 
+int XOR(int a, int b)
+{
+	int X = a & b;
+	int Y = ~a & ~b;
+	return (~X & ~Y);
+}
+
+void FindTwoNumXor(int *arr, int size, int *missed, int *repeat)
+{
+	int i = 0, j = 0;
+	int Xor = 0;
+
+	for(i = 0; i < size ; i++)
+		Xor = XOR(Xor, arr[i]);
+
+	for(i = 1; i <= size ; i++)
+		Xor = XOR(Xor, i);
+
+	printf("XOR = %d\n", Xor);
+
+	//Now Xor wil have only repeating and missing element
+	int Rt_Set_Bit = 0; //right most set bit 
+	Rt_Set_Bit = Xor & ~(Xor -1);
+
+	printf("Rt_Set_Bit = %d\n", Rt_Set_Bit);
+	
+	//divide numbers in two sets 
+	//one which has same set bit and another one which does not have right most bit set
+		
+	int Xor1 = 0;
+	int Xor2 = 0;
+	for(i = 0; i < size ; i++)
+	{
+		if(arr[i] & Rt_Set_Bit)
+			Xor1 = XOR(Xor1, arr[i]);
+		else
+			Xor2 = XOR(Xor2, arr[i]);
+
+		//move below loop here
+		if((i+1) & Rt_Set_Bit)
+			Xor1 = XOR(Xor1, i+1);
+		else
+			Xor2 = XOR(Xor2, i+1);
+	}
+	
+	//moved this loop up
+	/*for(i = 1; i <= size ; i++)
+	{
+		if(i *Rt_Set_Bit)
+			Xor1 = XOR(Xor1, i);
+		else
+			Xor2 = XOR(Xor2, i);
+	}
+	*/
+
+	//here we have now two numbers Xor1 and Xor2 
+	//But we need to find out who is repeating and missing
+	
+	//scan array once more and see if one of element is there
+	//if it is there then it is reapeting else this will be missing
+	
+	*repeat = Xor2;
+	*missed = Xor1;
+	for(i = 0; i < size ; i++)
+	{
+		if(arr[i] == Xor1)
+		{
+			*repeat = Xor1;
+			*missed = Xor2;
+			break;
+		}
+	}
+
+	return;
+}
+
 int main()
 {
 	int arr[] = {7, 3, 4, 5, 5, 6, 2};
@@ -109,7 +185,8 @@ int main()
 	int missed = 0;
 	int repeat = 0;
 	
-	FindTwoNum(arr, size, &missed, &repeat);
+	//FindTwoNum(arr, size, &missed, &repeat);
+	FindTwoNumXor(arr, size, &missed, &repeat);
 
 	int i = 0;
 	for(i = 0; i < size ; i++)
@@ -121,4 +198,5 @@ int main()
 
 	return 0;
 }
+
 
