@@ -9,5 +9,7 @@
 #Implement your own tail (Read last n lines of a huge file) - Tail.c
 #Find missing number - MissingNum.c
 #find missing elements in a range and misssing elements should be printed in sorted order - MissingNums.c
-#Find the repeating and the missing - FindTwoNum.c
+#Find the repeating and the missing - FindTwoNuTwos's comppliment - m.c
 #Position of rightmost set bit - RightSetBit.c
+#Twos's comppliment - TwosComplmnt.c
+
