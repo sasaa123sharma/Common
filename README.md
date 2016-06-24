@@ -15,5 +15,6 @@
 #Turn off the rightmost set bit - TurnOffRightBit.c
 #Check if number is power of two - PowerOfTwo.c
 #Get two repeating elements in a given array - TwoRepeatElm.c
+#Print Matrix in sprial form - printSpiralMatrix.c
 
 
