@@ -17,5 +17,6 @@
 #Get two repeating elements in a given array - TwoRepeatElm.c
 #Print Matrix in sprial form - printSpiralMatrix.c
 #Calculate x^y - Pow.c
+#SizeOf implementation - MySizeOf.c
 
 
