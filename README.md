@@ -18,5 +18,7 @@
 #Print Matrix in sprial form - printSpiralMatrix.c
 #Calculate x^y - Pow.c
 #SizeOf implementation - MySizeOf.c
+#memcpy - MyMemcpy.c
+#memmove - MyMemmove.c
 
 
