@@ -21,5 +21,6 @@
 #memcpy - MyMemcpy.c
 #memmove - MyMemmove.c
 #GCD - GCD.c
+#Euclid Algorithm - Euclid.c
 
 
