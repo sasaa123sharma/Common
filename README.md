@@ -20,5 +20,6 @@
 #SizeOf implementation - MySizeOf.c
 #memcpy - MyMemcpy.c
 #memmove - MyMemmove.c
+#GCD - GCD.c
 
 
