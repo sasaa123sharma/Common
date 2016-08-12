@@ -22,5 +22,4 @@
 #memmove - MyMemmove.c
 #GCD - GCD.c
 #Euclid Algorithm - Euclid.c
-
-
+#GCD of multiple numbers - GCDMulti.c
